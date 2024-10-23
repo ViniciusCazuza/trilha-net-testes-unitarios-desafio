@@ -1,3 +1,96 @@
+# Projeto - Testes Unitários com C#
+
+Este projeto foi desenvolvido como parte do módulo **"Testes Unitários com C#"** da trilha .NET da DIO. O objetivo principal foi implementar testes unitários para as classes e métodos fornecidos, garantindo maior cobertura de código e segurança no desenvolvimento do software.
+
+## Desafio
+
+Os gestores relataram frequentes problemas no sistema em produção, como bugs e falhas em funcionalidades que antes funcionavam corretamente. Por isso, foi sugerida a implementação de testes unitários para garantir a qualidade do código, prevenir regressões e melhorar a confiabilidade do sistema.
+
+## Objetivo
+
+O objetivo deste projeto foi criar testes unitários utilizando o framework **xUnit** para cobrir as classes e métodos de validação que já existiam no sistema. Os testes foram construídos para validar cenários positivos e negativos, cobrindo as funcionalidades mais críticas.
+
+## Tecnologias Utilizadas
+
+- **C#**
+- **.NET 6.0**
+- **xUnit** para testes unitários
+- **Visual Studio** ou qualquer IDE com suporte a .NET
+
+## Estrutura do Projeto
+
+O projeto está dividido em dois:
+
+1. **Projeto Console**: Contém as classes principais com a lógica de validação.
+2. **Projeto de Testes**: Contém as classes de testes unitários para validar o comportamento das classes e métodos do projeto console.
+
+### Classes do Projeto Console
+
+#### 1. `ValidacoesLista`
+
+Esta classe contém métodos para validar listas de números inteiros.
+
+- **RemoverNumerosNegativos**: Remove números negativos de uma lista.
+- **ListaContemDeterminadoNumero**: Verifica se um determinado número está presente em uma lista.
+- **MultiplicarNumerosLista**: Multiplica todos os elementos de uma lista por um determinado número.
+- **RetornarMaiorNumeroLista**: Retorna o maior número de uma lista.
+- **RetornarMenorNumeroLista**: Retorna o menor número de uma lista.
+
+#### 2. `ValidacoesString`
+
+Esta classe contém métodos para validar e manipular strings.
+
+- **RetornarQuantidadeCaracteres**: Retorna a quantidade de caracteres em uma string.
+- **ContemCaractere**: Verifica se uma string contém um determinado caractere ou trecho.
+- **TextoTerminaCom**: Verifica se uma string termina com um determinado trecho.
+
+### Classes do Projeto de Testes
+
+#### 1. `ValidacoesListaTests`
+
+Esta classe contém os testes unitários para os métodos da classe `ValidacoesLista`.
+
+- **DeveRemoverNumerosNegativosDeUmaLista**: Testa se os números negativos são removidos corretamente de uma lista.
+- **DeveConterONumero9NaLista**: Verifica se o número 9 está presente na lista.
+- **NaoDeveConterONumero10NaLista**: Verifica se o número 10 não está presente na lista.
+- **DeveMultiplicarOsElementosDaListaPor2**: Testa se os números da lista são corretamente multiplicados por 2.
+- **DeveRetornar9ComoMaiorNumeroDaLista**: Verifica se o maior número da lista é 9.
+- **DeveRetornarOitoNegativoComoMenorNumeroDaLista**: Verifica se o menor número da lista é -8.
+
+#### 2. `ValidacoesStringTests`
+
+Esta classe contém os testes unitários para os métodos da classe `ValidacoesString`.
+
+- **DeveRetornar6QuantidadeCaracteresDaPalavraMatrix**: Verifica se a quantidade de caracteres da palavra "Matrix" é 6.
+- **DeveContemAPalavraQualquerNoTexto**: Testa se a palavra "qualquer" está presente no texto.
+- **NaoDeveConterAPalavraTesteNoTexto**: Verifica se a palavra "teste" não está presente no texto.
+- **TextoDeveTerminarComAPalavraProcurado**: Verifica se o texto termina com a palavra "procurado".
+
+## Como Utilizar
+
+1. **Clone o projeto** ou abra diretamente em sua IDE de preferência.
+2. **Compile o projeto** e execute os testes unitários para validar as implementações.
+3. Para rodar os testes unitários:
+    - No Visual Studio, use o Test Explorer para rodar todos os testes.
+    - Em outras IDEs, use o terminal para executar `dotnet test` na raiz do projeto.
+
+## Testes
+
+Os testes cobrem cenários críticos, incluindo:
+
+- Remoção de números negativos de uma lista.
+- Verificação de números específicos em listas.
+- Operações de multiplicação sobre listas.
+- Verificação de caracteres e trechos de strings.
+- Comparações de maior e menor valor em listas.
+
+## Conclusão
+
+Com a implementação dos testes unitários, foi possível garantir maior confiabilidade e segurança no código, prevenindo a ocorrência de bugs e comportamentos indesejados. A cobertura de testes permite detectar rapidamente qualquer regressão no código, melhorando a qualidade do sistema como um todo.
+
+
+##
+
 # DIO - Trilha .NET - Testes Unitários com C#
 www.dio.me
 
